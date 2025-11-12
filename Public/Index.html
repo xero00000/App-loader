@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My App Gallery</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for apps...">
+        </div>
+    </header>
+
+    <main>
+        <div id="appGrid" class="app-grid">
+            </div>
+        <p id="noResults" class="hidden">No apps found matching your search.</p>
+    </main>
+
+    <div id="appModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <h2 id="modalTitle">App Title</h2>
+                <div class="modal-controls">
+                    <button id="openInNewTab" title="Open in New Tab">↗</button>
+                    <button id="closeModal" title="Close">×</button>
+                </div>
+            </header>
+            <div class="iframe-container">
+                <iframe id="appFrame" src="about:blank" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
