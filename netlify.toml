@@ -1,0 +1,6 @@
+[build]
+  # This is the command Netlify will run to build your site
+  command = "npm install && npm run build"
+  
+  # This is the directory Netlify will deploy
+  publish = "public"
